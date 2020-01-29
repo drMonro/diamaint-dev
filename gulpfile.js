@@ -35,8 +35,8 @@ gulp.task("css", function() {
     .pipe(sassGlob())
     .pipe(sass.sync().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
+    // .pipe(csso())
+    .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
