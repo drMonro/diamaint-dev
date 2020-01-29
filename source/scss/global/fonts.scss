@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "AntiqueOliTOT";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/AntiqueOliTOT-Com.woff2") format("woff2"),
+    url("../fonts/AntiqueOliTOT-Com.woff") format("woff");
+}
+
+@font-face {
+  font-family: "clearsans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/clearsans-regular.woff2") format("woff2"),
+    url("../fonts/clearsans-regular.woff") format("woff");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "clearsans";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/clearsans-italic.woff2") format("woff2"),
+    url("../fonts/clearsans-italic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "clearsans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/clearsans-bold.woff2") format("woff2"),
+    url("../fonts/clearsans-bold.woff") format("woff");
+  font-display: swap;
+}

@@ -1,0 +1,57 @@
+@mixin transition($property) {
+  transition: $property 0.5s linear;
+}
+
+@mixin lowHeightSignUpDesktop {
+  @media (max-height: 860px) and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin lowHeightSignUpLaptop {
+  @media (max-height: 690px) {
+    @content;
+  }
+}
+
+@mixin lowHeightSignUpBigMobile {
+  @media (max-height: 864px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $desktop-width - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $laptop-width - 1px) {
+    @content;
+  }
+}
+
+@mixin big-mobile {
+  @media (max-width: $tablet-width - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $big-mobile-width - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile-xs {
+  @media (max-width: $mobile-width - 1px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
